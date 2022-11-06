@@ -63,7 +63,7 @@ function join() {
             alert("登录成功");
             console.log(data.name);
             window['name'] = data.name;
-            window.open("index.html");
+            window.open("./index.html");
             } else {
                 // throw new Error("用户名不存在")
                 alert("用户名不存在或密码错误");
