@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "id": "guyong",
+      "name": "Gu Yong",
+      "password": "guyong123"
+    },
+    {
+      "id": "2530785465",
+      "password": "cywasx20011002",
+      "name": "aaaabya"
+    },
+    {
+      "id": "chenyong06@outlook.com",
+      "password": "2001",
+      "name": "Bye"
+    },
+    {
+      "id": "11",
+      "password": "12",
+      "name": "13"
+    },
+    {
+      "id": "a",
+      "password": "b",
+      "name": "c"
+    },
+    {
+      "id": "yudu",
+      "password": "123",
+      "name": "yudu123"
+    },
+    {
+      "id": "chenyong",
+      "password": "123",
+      "name": "chenyong123"
+    },
+    {
+      "id": "宝宝锋",
+      "password": "qwert",
+      "name": "宝宝锋一号"
+    }
+  ],
+  "config": {
+    "sitename": "WeNote",
+    "theme": "daytime",
+    "lang": "zh-cn"
+  },
+  "notes": [
+    {
+      "id": "0000",
+      "title": "untitled"
+    }
+  ]
+}

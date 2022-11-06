@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+    <!-- <script src="https://unpkg.com/turndown/dist/turndown.js"></script> -->
+</head>
+
+<body>
+
+    <!-- 大盒子开始 -->
+    <div class="container clearfix">
+
+        <!-- 标题开始 -->
+        <div class="word">
+            <img src="./picture/home.png" alt="" id="home">
+            <span>MyNode</span>
+        </div>
+
+        <!-- 侧边导航栏开始 -->
+        <div class="nav fl">
+            <img src="./picture/cha.png" alt="">
+            <span>BookList</span>
+            <div class="addNote" onclick="addBook()">新建笔记本</div>
+            <div class="delNote" onclick="delBook()">删除笔记本</div>
+            <ul class="noteList" id="list">
+                <li>
+                    第一个笔记本
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- 正文开始 -->
+        <div class="main fl">
+
+            <div class="title">
+                <input type="text" placeholder="Title">
+            </div>
+
+            <div class="content">
+                <div class="input" contenteditable="false" onclick="edit(this.parentNode.children[0])" onmouseover="changeWidth(this.style)" onmouseout="backChange(this.style)"></div>
+                <img src="./picture/up.png" alt="" class="up" title="向上移" onclick="moveUp(this.parentNode)">
+                <img src="./picture/down.png" alt="" class="down" title="向下移" onclick="moveDown(this.parentNode)">
+                <img src="./picture/up_down.png" alt="" class="up_jia" title="向上加" onclick="addUp(this.parentNode)">
+                <img src="./picture/down_jia.png" alt="" class="down_jia" title="向下加" onclick="addDown(this.parentNode)">
+                <img src="./picture/minus.png" alt="" class="minus" title="删除" onclick="deleteAll(this.parentNode)">
+                <img src="./picture/view.png" alt="" class="view" title="预览" onclick="view(this.parentNode.children[0])">
+                <img src="./picture/update.png" alt="" class="update" title="修改" onclick="update(this.parentNode.children[0])">
+            </div>
+
+
+        </div>
+
+        <!-- 笔记本属性值开始 -->
+        <div id="showNum" class="value">
+            <span>笔记属性：</span><br><br>
+            <span>更新时间：time</span><br><br>
+            <span>作者：</span><br><br>
+            <span>单元格属性：</span><br><br>
+            <span>编号：</span>
+        </div>
+
+        <!-- 使用说明 -->
+        <div class="illustration" onclick="kan()">
+            使用说明
+        </div>
+
+        <!-- 说明书 -->
+        <div class="explanation">
+            <img src="./picture/cha.png" alt="" onclick="chadiao()">
+            <span>&nbsp&nbsp&nbsp&nbsp点击左上方房子图标，出现笔记本列表。
+                单元格右侧七个按钮依次为上移、下移、向上加、向下加、删除单元格、预览和修改。
+                双击要使用的单元格，选择进入编辑模式，同时右侧方框中会显示此单元格的属性，编辑完成后，点击预览按钮进入预览模式，若要继续编辑，可以点击修改按钮进行修改。</span>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
+<script src="/index.js"></script>
+<!-- html转Markdown -->
+<script src="./html_to_markdown.js"></script>
+<!-- Markdown转html -->
+<script src="./markdown_to_html.js"></script>

@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+body{
+    font-size: 14px;
+    font-family: '微软雅黑';
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body{
+    background-image: url('./images/3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main{
+    width: 450px;
+    margin: 200px auto;
+    background-color:rgb(40,44,52,0.4);
+}
+
+.title{
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px solid  rgb(97,218,251);
+}
+
+.title span{
+    color: rgb(97,218,251);
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 50px;
+    letter-spacing:8px;
+}
+
+.one{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.one span{
+    color: rgb(97,218,251);
+}
+
+.id{
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border-color: rgb(97,218,251);
+    outline: none;
+    padding-left: 10px;
+}
+
+.two{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.two span{
+    color: rgb(97,218,251);
+}
+
+.password{
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border-color: rgb(97,218,251);
+    outline: none;
+    padding-left: 10px;
+}
+
+.three{
+    text-align: center;
+    margin-top: 30px;
+    display: none;
+}
+
+.three span{
+    color: rgb(97,218,251);
+}
+
+.name{
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border-color: rgb(97,218,251);
+    outline: none;
+    padding-left: 10px;
+}
+
+.push{
+    margin-top: 10px;
+}
+
+.login{
+    width: 50px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 160px;
+    background-color: rgb(97,218,251);
+    color: aliceblue;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.login:hover{
+    background-color: aquamarine;
+}
+
+.register{
+    width: 50px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-right: 160px;
+    background-color: rgb(97,218,251);
+    color: aliceblue;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.register:hover{
+    background-color: aquamarine;
+}
+

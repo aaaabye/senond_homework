@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+    font-size: 14px;
+    font-family: '微软雅黑';
+    background-color: cornsilk;
+}
+
+.container {
+    max-width: 1920px;
+    /* height: 100px; */
+    /* background-color: red; */
+    margin: 0px auto;
+}
+
+.word {
+    font-size: 25px;
+    border-bottom: 5px solid black;
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.word img{
+    width: 40px;
+}
+
+.word img:hover{
+    cursor: pointer;
+}
+
+.word span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav {
+    width: 0px;
+    height: 650px;
+    background-color: darkgray;
+    /* margin-top: 10px; */
+    text-align: center;
+    position: fixed;
+    top: 85px;
+    transition: 0.5s;
+}
+
+.nav img{
+    position: relative;
+    top: 10px;
+    left: 80px;
+    display: none;
+    width: 25px;
+}
+
+
+.nav img:hover{
+    cursor: pointer;
+}
+
+.nav span {
+    font-size: 20px;
+    display: none;
+    transition: 0.5s;
+}
+
+.addNote{
+    width: 100px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    display: none;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+.addNote:hover{
+    border-width: 5px;
+}
+
+.delNote{
+    width: 100px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    display: none;
+    margin-top: 15px;
+}
+
+.delNote:hover{
+    border-width: 5px;
+}
+
+.nav ul{
+    margin-top: 20px;
+    display: none;
+}
+
+.nav ul li{
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.nav ul li:hover{
+    border-width: 4px;
+}
+
+.main{
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 1250px;
+    border: 3px solid black;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+
+.main .title input{
+    border: 3px solid black;
+    height: 30px;
+}
+
+/* 内容开始 */
+.main .content .input{
+    border: 3px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    width: 800px;
+    height: 150px;
+    display: inline-block;
+    padding: 15px;
+}
+
+.main .content .up{
+    width: 36px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.main .content .down{
+    width: 36px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.main .content .up_jia{
+    width: 35px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.main .content .down_jia{
+    width: 33px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.main .content .minus{
+    width: 35px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.main .content .view{
+    width: 35px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.main .content .update{
+    width: 35px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* 笔记本属性值开始 */
+.value{
+    width: 200px;
+    height: 210px;
+    border: 3px solid black;
+    margin-top: 10px;
+    margin-right: 10px;
+    position: fixed;
+    top: 200px;
+    right: 0px;
+    padding-top: 10px;
+}
+
+.value span{
+    font-size: 18px;
+    font-family: '微软雅黑';
+}
+
+/* 使用说明 */
+.illustration{
+    width: 80px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 20px;
+    position: fixed;
+    margin-right: 10px;
+    top: 500px;
+    right: 0px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.illustration:hover{
+   border-width: 5px;
+   font-size: 18px;
+}
+
+.explanation{
+    width: 550px;
+    height: 210px;
+    border: 3px solid black;
+    position: fixed;
+    top: 400px;
+    right: 600px;
+    font-size: 18px;
+    line-height: 40px;
+    /* padding: 10px; */
+    display: none;
+    padding: 10px;
+}
+
+.explanation img{
+    position: relative;
+    top: 180px;
+    left: 510px;
+    display: inline-block;
+    width: 30px;
+}
+
+.explanation img:hover{
+    cursor: pointer;
+}
