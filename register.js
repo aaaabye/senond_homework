@@ -61,6 +61,7 @@ function join() {
             // console.log(data.password);
             if (data.id == x1 && data.password == x2) {   // 验证是否存在该用户return data
             alert("登录成功");
+            alert("欢迎"+data.name+"使用笔记本");
             console.log(data.name);
             window['name'] = data.name;
             window.open("./index.html");
