@@ -69,6 +69,6 @@ function join() {
                 alert("用户名不存在或密码错误");
             }
         })
-        .catch(err => console.log(err))
+      
 
 }
