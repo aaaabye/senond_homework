@@ -29,7 +29,7 @@ function back() {
         name: x3,
     };
     requestOptions.body = JSON.stringify(userdata);
-    fetch(`${"http://123.60.44.50:3000"}/${"users"}`, requestOptions)
+    fetch(`${"https://db-api.amarea.cn"}/${"users"}`, requestOptions)
         .then(response => response.json())
         .then(data => alert("注册成功"))
         .catch(err => console.log(err));
@@ -55,7 +55,7 @@ function join() {
         headers: myHeaders,
         redirect: "follow",
     };
-    fetch(`${"http://123.60.44.50:3000"}/${"users"}/${x1}`, requestOptions)
+    fetch(`${"https://db-api.amarea.cn"}/${"users"}/${x1}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             // console.log(data.password);
