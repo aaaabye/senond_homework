@@ -1,5 +1,5 @@
 const name=window.opener['name'];
-alert("欢迎"+name+"使用笔记本");
+
 
 //侧边导航条
 document.querySelector("#home").onclick = function () {
