@@ -65,7 +65,7 @@ function join() {
             console.log(data.name);
             // window['name'] = data.name;
             // window.open("./index.html");
-            window.sessionStorage.setItem("name",data.name);
+            localStorage.setItem("name", data.name);
             location.replace("./index.html");
             } else {
                 // throw new Error("用户名不存在")

@@ -1,4 +1,4 @@
-const name=window.sessionStorage.getItem("name");
+const name=localStorage.getItem("name");
 
 
 //侧边导航条
