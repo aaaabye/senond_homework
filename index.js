@@ -1,4 +1,4 @@
-const name=window.opener['name'];
+const name=window.sessionStorage.getItem("name");
 
 
 //侧边导航条

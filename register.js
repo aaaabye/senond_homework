@@ -63,8 +63,10 @@ function join() {
             alert("登录成功");
             alert("欢迎"+data.name+"使用笔记本");
             console.log(data.name);
-            window['name'] = data.name;
-            window.open("./index.html");
+            // window['name'] = data.name;
+            // window.open("./index.html");
+            window.sessionStorage.setItem("name",data.name);
+            location.replace("./index.html");
             } else {
                 // throw new Error("用户名不存在")
                 alert("用户名不存在或密码错误");
